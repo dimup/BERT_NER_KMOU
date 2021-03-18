@@ -38,7 +38,7 @@
   + Epochs : 5
   + Batch size : 8
 + 학습을 마친 뒤 Validation을 수행합니다. 토큰 간 정확도(Accuracy)를 측정했습니다.
-  + BERT :  
+  + BERT : 88.40340752954108 %
   + KoBERT : 94.03966784156759 %
 
 **5. Testing**
