@@ -36,7 +36,7 @@
   + Learning rate : 1e-5
   + Epsilon : 1e-8
   + Epochs : 5
-  + Batch size : 8
+  + Batch size : 32
 + 학습을 마친 뒤 Validation을 수행합니다. 간단하게 토큰 간 정확도(Accuracy)를 측정했습니다.
   + BERT : 88.40340752954108 %
   + KoBERT : 94.03966784156759 %
