@@ -23,7 +23,9 @@
   + WordPiece(BERT) SentencePiece(KoBERT) tokenizing
   + Embedding
   + Padding
-  
++ BERT에서 사용되는 WordPiece tokenizer와 KoBERT에서 사용되는 SentencePiece tokenizer의 차이점은 아래 그림과 같이 정리해보았습니다.
+<p align="center"><img src="https://user-images.githubusercontent.com/46772883/112099446-dd82ae00-8be6-11eb-8638-e48949dcd450.png" width="80%" height="80%"/></p>
+
 **3. Modeling**
 + 사전학습된 BERT, KoBERT 모델에 Token Classification Layer를 쌓은 형태로 모델링을 진행합니다.
   + BERT : Huggingface의 transformers 라이브러리에서 BertForTokenClassification 클래스를 활용했습니다. 사전학습 모델은 BERT-multilingual.
