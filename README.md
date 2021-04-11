@@ -30,7 +30,7 @@
 + 사전학습된 BERT, KoBERT 모델에 Token Classification Layer를 쌓은 형태로 모델링을 진행합니다.
   + BERT : Huggingface의 transformers 라이브러리에서 BertForTokenClassification 클래스를 활용했습니다. 사전학습 모델은 BERT-multilingual.
   + KoBERT : BERT와 동일하지만, 사전학습 모델을 KoBERT 모델로 진행합니다. 
-    + (monologg님깨서 transformers 라이브러리에서 바로 KoBERT를 사용할 수 있도록 설정하신 것을 활용했습니다. https://github.com/monologg/KoBERT-Transformers)
+    + (monologg님께서 transformers 라이브러리에서 바로 KoBERT를 사용할 수 있도록 설정하신 것을 활용했습니다. https://github.com/monologg/KoBERT-Transformers)
 
 **4. Training**
 + Optimizer와 Hyper parameters를 다음과 같이 설정한 뒤 학습을 진행합니다.
