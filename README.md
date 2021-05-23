@@ -13,9 +13,9 @@
 
 ### **구현 과정**
 **1. Data 수집 및 구축**
-+ 한국해양대학교 개체명 코퍼스에서 input data와 target data 각각 약 21000 문장을 파싱한 뒤 Training, Validation 데이터로 분리합니다.
++ 한국해양대학교 개체명 코퍼스에서 input data와 target data 각각 약 21000 문장을 파싱한 뒤 Training, Test 데이터로 분리합니다.
   + Training set : 약 17000 문장
-  + Validation set : 약 4000 문장
+  + Test set : 약 4000 문장
 
 **2. Input data, Target data 전처리**
 + BERT 구조 형식에 맞게 데이터 전처리를 진행합니다. Input data와 Target data의 전처리는 차이가 있지만, 다음의 공통 과정을 거칩니다.
@@ -39,7 +39,7 @@
   + Epsilon : 1e-8
   + Epochs : 5
   + Batch size : 32
-+ 학습을 마친 뒤 Evaluation을 수행합니다. 간단하게 토큰 간 정확도(Accuracy)를 측정했습니다.
++ 학습을 마친 뒤 Test set에 대한 Evaluation을 수행합니다. 간단하게 토큰 간 정확도(Accuracy)를 측정했습니다.
   + BERT : 88.40340752954108 %
   + KoBERT : 94.03966784156759 %
 
