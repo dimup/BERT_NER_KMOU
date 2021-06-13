@@ -21,7 +21,7 @@
 + BERT 구조 형식에 맞게 데이터 전처리를 진행합니다. Input data와 Target data의 전처리는 차이가 있지만, 다음의 공통 과정을 거칩니다.
   + [CLS], [SEP] 토큰 부착
   + WordPiece(BERT) SentencePiece(KoBERT) tokenizing
-  + Embedding
+  + Integer encoding
   + Padding
 + BERT에서 사용되는 WordPiece tokenizer와 KoBERT에서 사용되는 SentencePiece tokenizer의 차이점은 아래 그림과 같이 정리해보았습니다.
 <p align="center"><img src="https://user-images.githubusercontent.com/46772883/112106822-7d453980-8bf1-11eb-9ba2-b6ace999d65e.png"/></p>
@@ -47,8 +47,8 @@
 + 임의의 문장을 학습이 완료된 모델에 통과시켜 그 결과를 확인합니다.
   + (입력 문장의 토큰 - 예측된 태그) 쌍으로 출력합니다.
 
-**6. Inferencing**
-+ 문장을 입력할 경우 해당 문장에 포함된 개체명에 태그를 부착하여 출력하도록 Inference 과정을 진행합니다.
+**6. 응용**
++ 문장을 입력할 경우 해당 문장에 포함된 개체명에 태그를 부착하여 출력하는 과정을 진행합니다.
     + ex) 송재우는 상명대학교를 졸업했습니다. -> <송재우:PER>는 <상명대학교:ORG>를 졸업했습니다.
 
 
