@@ -6,7 +6,7 @@
   + Google BERT 기반의 개체명 인식 모델을 구현하는 과정 및 코드가 작성된 파일입니다.
 + **"KoBERT_NER_KMOU.ipynb"**
   + SKTBrain KoBERT 기반의 개체명 인식 모델을 구현하는 과정 및 코드가 작성된 파일입니다.
-  + BERT 기반 모델의 구현 과정과 동일한 흐름을 갖지만, Data Preprocessing, Modeling, Inference 에서 약간의 차이점이 있습니다.
+  + BERT 기반 모델의 구현 과정과 동일한 흐름을 갖지만, Data Preprocessing, Modeling, 응용 과정에서 약간의 차이점이 있습니다.
 + **"NER_Data_Parsing_example.ipynb"**
   + 해양대학교 개체명 코퍼스에서 필요 부분만 파싱해오는 코드 예시입니다.
 
